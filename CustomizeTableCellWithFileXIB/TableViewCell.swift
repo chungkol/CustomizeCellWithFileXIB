@@ -9,18 +9,17 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var imLogoCell: UIImageView!
+    
+    @IBOutlet weak var lbNameCell: UILabel!
+    
+    
+    @IBOutlet weak var lbStadiumCell: UILabel!
 
-   
-    @IBOutlet weak var imageLogo: UIImageView!
-    
-    @IBOutlet weak var lbName: UILabel!
-    
-    
-    @IBOutlet weak var lbStadium: UILabel!
-    
-    
-    
-    @IBOutlet weak var imageRate: UIImageView!
-    
+
+    @IBOutlet weak var imRateCell: UIImageView!
+       
        
 }

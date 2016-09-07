@@ -11,6 +11,7 @@ import UIKit
 class MasterTableViewController: UITableViewController {
     
     var arrData: [DataItem]!
+    var detailVC: DetailViewController!
     
     
     override func viewDidLoad() {
@@ -24,7 +25,6 @@ class MasterTableViewController: UITableViewController {
         
         arrData = [item1,item2,item3,item4,item5]
         
-//        self.tableView.registerNib(UINib(nibName: "Cell", bundle: nil), forCellReuseIdentifier: "Cell")
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,11 +38,21 @@ class MasterTableViewController: UITableViewController {
         let cell = NSBundle.mainBundle().loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
         let item: DataItem = arrData[indexPath.row]
         
-        cell.imageLogo.image = item.imageLogo
-        cell.imageRate.image = item.imageStartRating
-        cell.lbName.text = item.nameFootballClub
-        cell.lbStadium.text = item.nameStadium
+        cell.imLogoCell.image = item.imageLogo
+        cell.imRateCell.image = item.imageStartRating
+        cell.lbNameCell.text = item.nameFootballClub
+        cell.lbStadiumCell.text = item.nameStadium
         return cell
+    }
+    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if detailVC == nil {
+            detailVC = self.storyboard?.instantiateViewControllerWithIdentifier("DetailVC") as! DetailViewController
+        }
+        let item: DataItem = arrData[indexPath.row]
+        detailVC.stringTitle = item.nameStadium
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

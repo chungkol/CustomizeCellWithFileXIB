@@ -32,6 +32,7 @@
 		54A5A41D1D7ED332002484EE /* 3stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A5A40C1D7ED332002484EE /* 3stars.png */; };
 		54A5A41E1D7ED332002484EE /* 4stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A5A40D1D7ED332002484EE /* 4stars.png */; };
 		54A5A41F1D7ED332002484EE /* 5stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A5A40E1D7ED332002484EE /* 5stars.png */; };
+		54B658581D7FB32F00EB6074 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B658571D7FB32F00EB6074 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		54A5A40C1D7ED332002484EE /* 3stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3stars.png; sourceTree = "<group>"; };
 		54A5A40D1D7ED332002484EE /* 4stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4stars.png; sourceTree = "<group>"; };
 		54A5A40E1D7ED332002484EE /* 5stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5stars.png; sourceTree = "<group>"; };
+		54B658571D7FB32F00EB6074 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				54A1A68D1D7F04BB001E4602 /* DataItem.swift */,
 				54A5A3E81D7ED2B5002484EE /* Main.storyboard */,
 				54A1A68B1D7F0484001E4602 /* MasterTableViewController.swift */,
+				54B658571D7FB32F00EB6074 /* DetailViewController.swift */,
 				54A5A3EB1D7ED2B5002484EE /* Assets.xcassets */,
 				54A5A3ED1D7ED2B5002484EE /* LaunchScreen.storyboard */,
 				54A5A3F01D7ED2B5002484EE /* Info.plist */,
@@ -247,6 +250,7 @@
 			files = (
 				54A5A3E51D7ED2B5002484EE /* AppDelegate.swift in Sources */,
 				54A1A68C1D7F0484001E4602 /* MasterTableViewController.swift in Sources */,
+				54B658581D7FB32F00EB6074 /* DetailViewController.swift in Sources */,
 				54A1A68E1D7F04BB001E4602 /* DataItem.swift in Sources */,
 				54A5A3F81D7ED2FA002484EE /* TableViewCell.swift in Sources */,
 			);
